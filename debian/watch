@@ -1,0 +1,5 @@
+version=3
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-gulp-load-plugins-$1.tar.gz/ \
+ https://github.com/jackfranklin/gulp-load-plugins/tags .*/archive/v?([\d\.]+).tar.gz
